@@ -43,7 +43,9 @@ body {
   line-height: 1.5;
   overflow-y: auto;
   background: #fafafa;
-  white-space: pre-line;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 /* messages */
@@ -140,4 +142,135 @@ body {
 
 .site-footer a:hover {
   color: #666666;
+}
+
+/* ---------- L'Oréal Branding ---------- */
+body {
+  background: #f5f5f5;
+}
+
+.site-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.logo {
+    width: 220px;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.site-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #666;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+/* Chat Window */
+.chat-window {
+    border: none;
+    border-radius: 14px;
+    background: white;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+}
+
+/* Input */
+.chat-form input {
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.chat-form input:focus {
+    border-color: #000;
+}
+
+/* Button */
+.chat-form button {
+    background: #000;
+    border-radius: 10px;
+}
+
+.chat-form button:hover {
+    background: #333;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.site-footer a {
+    color: #000;
+    font-weight: 500;
+}
+
+.site-footer a:hover {
+    color: #666;
+}
+
+/* ---------- Chat Conversation ---------- */
+.message {
+    display: flex;
+    margin: 14px 0;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.assistant {
+    justify-content: flex-start;
+}
+
+.bubble {
+    max-width: 75%;
+    padding: 14px 18px;
+    border-radius: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.user .bubble {
+    background: #000;
+    color: white;
+    border-bottom-right-radius: 6px;
+}
+
+.assistant .bubble {
+    background: #ececec;
+    color: #222;
+    border-bottom-left-radius: 6px;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.latest-question {
+    background: #f5f5f5;
+    border-left: 4px solid #000;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+}
+
+.latest-question strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #000;
 }

@@ -18,15 +18,28 @@
   <body>
     <div class="page-wrapper">
       <!------- Header / Branding ------->
-      <header class="site-header">
-        <h1 class="site-title">Smart Product Advisor</h1>
-      </header>
+  <header class="site-header">
+    <img
+        src="img/loreal-logo.png"
+        alt="L'Oréal Logo"
+        class="logo">
+
+    <h1 class="site-title">
+        L'Oréal Beauty Advisor
+    </h1>
+
+    <p class="tagline">
+        Personalized skincare, makeup, and haircare recommendations.
+    </p>
+</header>
 
       <!------- Chat Area ------->
       <main>
         <section class="chatbox">
+          <div id="latestQuestion" class="latest-question"></div>
+
           <div id="chatWindow" class="chat-window">
-            <!-- messages will be appended here via JS -->
+            <!-- messages -->
           </div>
 
           <form id="chatForm" class="chat-form">
@@ -48,15 +61,20 @@
       </main>
 
       <!------- Footer Links ------->
-      <footer class="site-footer">
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
-        <nav>
-          <!-- These URLs are placeholders -->
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Contact</a>
-        </nav>
-      </footer>
+  <footer class="site-footer">
+    <p>&copy; 2026 L'Oréal. Educational Project.</p>
+    <nav>
+        <a href="https://www.loreal.com" target="_blank">
+            L'Oréal </a>
+
+        <a href="https://www.loreal.com/en/privacy-policy/" target="_blank">
+            Privacy </a>
+
+        <a href="https://www.loreal.com/en/contact-us/" target="_blank">
+            Contact
+        </a>
+    </nav>
+  </footer>
     </div>
 
     <script src="script.js"></script>
